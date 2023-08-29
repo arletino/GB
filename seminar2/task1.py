@@ -6,7 +6,7 @@
 Input: [0, -1, 5, 2, 3]
 Output: 2 (-1 < 5, 2 < 3)
 Примечание: Пользователь может вводить значения
-списка или список задан изначально.'''
+списка или список задан изначально.
 lst = [0, -1, 5, 2, 3]
 set_1 = set()
 for el in lst:
@@ -22,4 +22,7 @@ for el, i in enumerate(lst):
     if el in lst[:i] and el in lst[i:]:
         count +=1
         lst.remove(el)
-print(count)
+print(count)'''
+import bisect
+li1 = [3, 1, 4, 4, 4, 6, 7]
+print (li1[bisect.bisect_left(li1, 2)])
