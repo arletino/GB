@@ -27,4 +27,4 @@ else:
 print(lst1)
 print(lst2)
 print(lst_res)
-проверка new1
+проверка
