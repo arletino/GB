@@ -9,7 +9,7 @@ def manual_fill_list(): # функция для задания размера и
     return [int(input(f'введите {i}-й - элемент: ')) for i in range(int(input('введите колв-элементов: ')))]
 
 def random_fill_list(): # функция для задания размера и заполнения списка случайным образом
-    return [randint(1, 10) for i in range(int(input('введите колв-элементов: ')))]
+    return [randint(1, 5) for i in range(int(input('введите колв-элементов: ')))]
 
 if input('1 - Заполнить элементы случайным способом\n' # Выбираем каким способом заполнить списки
          '2 - Заполнить элементы ручным способом\n'
@@ -21,5 +21,9 @@ else:
     lst2 = manual_fill_list()
 print(lst1)
 print(lst2)
-lst_res = sorted(list(set(sorted(lst1) + sorted(lst2))))
-print(lst_res)
+lst_res =[]
+for i in (lst1 if len(lst1) >= len(lst2) else lst2):
+    print(i)
+    if i in lst1 and i in lst2 and i not in lst_res:
+        lst_res.append(i)
+print(sorted(lst_res))
