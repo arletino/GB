@@ -26,4 +26,5 @@ for i in (lst1 if len(lst1) >= len(lst2) else lst2):
     print(i)
     if i in lst1 and i in lst2 and i not in lst_res:
         lst_res.append(i)
-print(sorted(lst_res))
+print(sorted(lst_res)) 
+
