@@ -18,9 +18,20 @@
 Вывод:
 220 284'''
 
-def count_dev(num):
+def sum_dev(num: int) -> int:
     sum = 0
-    for i in range(1, int(num**0.5) +1):
-        if num % i == 0:
-            sum += i
+    for el in range(1, num // 2 + 1):
+        if num % el == 0:
+            sum += el
     return sum
+
+k = int(input())
+# 
+
+result1 =[]
+for el1 in range(1, k + 1):
+    num2 = sum_dev(el1)
+    if el1 == sum_dev(num2) and  el1 < num2: 
+        result1.append([el1, num2])
+
+print(result1)
