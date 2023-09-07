@@ -1,16 +1,24 @@
-def test(nums: list[int]) -> list:
-    lst = []
-    pow = 1
-    for el in nums:
-        lst.append(pow)
-        pow *= el    
-    pow = 1
-    for i in range(len(nums) - 1, -1, -1):
-        lst[i] = pow * lst[i]
-        pow *= nums[i]
-    return lst
-    
+'''Напишите функцию same_by(characteristic, objects), которая
+проверяет, все ли объекты имеют одинаковое значение
+некоторой характеристики, и возвращают True, если это так.
+Если значение характеристики для разных объектов
+отличается - то False. Для пустого набора объектов, функция
+должна возвращать True. Аргумент characteristic - это
+функция, которая принимает объект и вычисляет его
+характеристику.
+Ввод:                                   Вывод:
+values = [0, 2, 10, 6]                      same
+if same_by(lambda x: x % 2, values):
+print(‘same’)
+else:
+print(‘different’)'''
 
-lst = [1,2,3,4]
-print(lst)
-print(test(lst))
+def same_by(characteristic, objects):
+    return len(set(map(characteristic, objects))) < 2
+
+values = [] 
+print(same_by(lambda x: x % 2, values))
+if same_by(lambda x: x % 2, values):
+    print('same')
+else:
+    print('different')
