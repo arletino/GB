@@ -13,4 +13,9 @@
 
 st = 'пара-ра-рам рам-пам-папам па-ра-па-да'
 vowel = {'а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е'}
-print(filter(st.split(), key=lambda x:
+
+if len(set([len(list(filter(lambda x: x in vowel, word))) 
+            for word in input('Введите кричалку: ').lower().split()])) == 1:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
