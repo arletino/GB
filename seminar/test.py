@@ -1,24 +1,17 @@
-'''Напишите функцию same_by(characteristic, objects), которая
-проверяет, все ли объекты имеют одинаковое значение
-некоторой характеристики, и возвращают True, если это так.
-Если значение характеристики для разных объектов
-отличается - то False. Для пустого набора объектов, функция
-должна возвращать True. Аргумент characteristic - это
-функция, которая принимает объект и вычисляет его
-характеристику.
-Ввод:                                   Вывод:
-values = [0, 2, 10, 6]                      same
-if same_by(lambda x: x % 2, values):
-print(‘same’)
-else:
-print(‘different’)'''
+# def compress(chars: list[str]) -> int:
+#     s = ''
+#     letter = ''
+#     count = 1
+#     for ch in chars:
+#         if ch in s:
+#             count +=1
+#         elif count !=1:
+#             s += str(count) + ch
+#             count = 1
+#         else:
+#             s += ch
+#     return s if count == 1 else s + str(count)
 
-def same_by(characteristic, objects):
-    return len(set(map(characteristic, objects))) < 2
+# chars = ["a","a","b","b","c","c","c"]
+# print(compress(chars))))
 
-values = [] 
-print(same_by(lambda x: x % 2, values))
-if same_by(lambda x: x % 2, values):
-    print('same')
-else:
-    print('different')
