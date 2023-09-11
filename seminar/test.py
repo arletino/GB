@@ -15,3 +15,4 @@
 # chars = ["a","a","b","b","c","c","c"]
 # print(compress(chars))))
 
+import graphics as gr

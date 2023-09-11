@@ -1,0 +1,5 @@
+Фамилия;Имя;Номер
+Ivan;Ivanov;89996662315
+Ivan;Ivanov;89563214789
+Ivan;Ivanov;12345678901
+Ivan;Ivanov;22222222222
