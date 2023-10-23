@@ -1,0 +1,4 @@
+окт. 20, 2023 2:26:02 PM Java.seminars.seminar_new.task_1 writeFile
+INFO: Файл успешно сохранен
+окт. 20, 2023 2:26:33 PM Java.seminars.seminar_new.task_1 writeFile
+WARNING: Сохранить не удалось

@@ -23,17 +23,7 @@ class Equation {
     nums[1] = eq.substring(eq.indexOf("+")+1, eq.indexOf("="));
     nums[2] = eq.substring(eq.indexOf("=")+1);
   }  
-  public static String mathSearch(String[] nums) {
-    int temp, x, y, len;
-    len = nums[0].length() + nums[1].length();
-    int[] intNum = new int[len];
-    temp = Integer.parseInt(nums[2]);
-    for (int i = 0; i < intNum.length; i++) {
-      
-    }
-    
-  return
-  }
+
   public static String searchNum(String[] nums) {
     String temp;
     int a, b, c, i, j;
