@@ -1,6 +1,6 @@
 // Напишите метод, который составит строку, состоящую из 100 повторений слова TEST и метод, 
 // который запишет эту строку в простой текстовый файл, обработайте исключения.
-package Java.seminars.seminar_new;
+package Java.JavaCore.seminar_new;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package Java.seminars.seminar_1;
+package Java.JavaCore.seminar_1;
 public class test{
     public static void main(String[] args) {
     int count = 0;
