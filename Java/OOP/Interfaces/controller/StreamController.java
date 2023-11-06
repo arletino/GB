@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 import Java.OOP.Interfaces.data.Stream;
-import Java.OOP.Interfaces.data.StreamComporator;
+import Java.OOP.Interfaces.data.StreamComparator;
 import Java.OOP.Interfaces.data.StudentGroup;
 import Java.OOP.Interfaces.service.StreamService;
 import Java.OOP.Interfaces.view.StreamView;

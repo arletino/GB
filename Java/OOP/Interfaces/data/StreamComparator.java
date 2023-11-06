@@ -2,7 +2,7 @@ package Java.OOP.Interfaces.data;
 
 import java.util.Comparator;
 
-public class StreamComporator implements Comparator<StudentGroup>{
+public class StreamComparator implements Comparator<StudentGroup>{
 
 
     @Override

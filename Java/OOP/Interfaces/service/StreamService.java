@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 import Java.OOP.Interfaces.data.Stream;
-import Java.OOP.Interfaces.data.StreamComporator;
+import Java.OOP.Interfaces.data.StreamComparator;
 import Java.OOP.Interfaces.data.StudentGroup;
 
 public class StreamService  {
@@ -20,7 +20,7 @@ public class StreamService  {
     }
 
     public void sortSize(){
-        Collections.sort(this.getList(), new StreamComporator());
+        Collections.sort(this.getList(), new StreamComparator());
     }
     public List<Stream> sortListStreams(List<Stream> listStreams){
         Collections.sort(listStreams);
