@@ -59,7 +59,9 @@
     План урока:
     Разбор примеров/задач на уроке
 
-    [Лекции Каменецкий](https://gbcdn.mrgcdn.ru/uploads/record/246032/attachment/7491343e30dd6649263c51a97e8f18f6.mp4)  
+    [Лекции Каменецкий](https://gbcdn.mrgcdn.ru/uploads/record/246032/attachment/7491343e30dd6649263c51a97e8f18f6.mp4)
+
+    [Семинар Байраковский](gbcdn.mrgcdn.ru/uploads/record/292608/attachment/8309344ef1cb61611a230e4762652a60.mp4)  
 
 6. ООП Дизайн и Solid
     - Single responsibility principle (Принцип единственной ответственности)
@@ -70,6 +72,7 @@
 
 
     [Лекции Каменецкий](https://gbcdn.mrgcdn.ru/uploads/record/246033/attachment/1aa32a5eaca83751abf1402697759670.mp4)
+    [Семинар Байраковский](https://gbcdn.mrgcdn.ru/uploads/record/294496/attachment/9341696796a26d62e910171952e2afd9.mp4)
 
 7.  ООП Дизайн и Solid  
     Рассмотрим пример задач на языке C#
