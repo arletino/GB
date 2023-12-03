@@ -1,12 +1,15 @@
 package Java.Laptop.data;
 
-public class Laptop extends Product implements Comparable<Object>{
+import java.util.ArrayList;
+import java.util.List;
+
+public class Laptop extends Product implements Comparable<Laptop>{
 
     private String typeOS, color;
     private Integer capacityRam, capacityRom;
     
-    public Laptop(String manufacturerProduct, String nameProduct, String typeOS, String color, Integer capacityRam, Integer capacityRom) {
-        super(manufacturerProduct, nameProduct);
+    public Laptop(int id, String manufacturerProduct, String nameProduct, String typeOS, String color, Integer capacityRam, Integer capacityRom) {
+        super(id, manufacturerProduct, nameProduct);
         this.typeOS = typeOS;
         this.color = color;
         this.capacityRam = capacityRam;
@@ -61,10 +64,12 @@ public class Laptop extends Product implements Comparable<Object>{
 
     @Override
     public String toString() {
-        return "manufacturerProduct=" + super.getManufacturerProduct() +
-                ", nameProduct=" + super.getNameProduct() + ", typeOS=" + typeOS + 
-                ", color=" + color + ", capacityRam=" + capacityRam + ", capacityRom=" + capacityRom + 
-                ", dateAdd=" + super.getDateAdd();
+        String s = 
+            String.format("%1$-3s | %2$-12s | %3$-10s | %4$-8s | %5$-8s | %6$-3s | %7$-5s | %8$-16s", 
+                            super.getId(),super.getManufacturerProduct(), super.getNameProduct(),
+                            typeOS, color, capacityRam, capacityRom, super.getDateAdd());
+        return s;
+
     }
 
     public String getTypeOS() {
@@ -99,10 +104,22 @@ public class Laptop extends Product implements Comparable<Object>{
         this.capacityRom = capacityRom;
     }
 
-    @Override
-    public int compareTo(Object arg0) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+    public List<String> getLaptopParam(){
+        List<String> params = new ArrayList<>();
+        params.add("" + super.getId());
+        params.add(super.getManufacturerProduct());
+        params.add(super.getNameProduct());
+        params.add(typeOS);
+        params.add(color);
+        params.add(capacityRam.toString());
+        params.add(capacityRom.toString());
+        return params;
     }
+    
+    @Override
+    public int compareTo(Laptop arg0) {
+        return super.getId() - arg0.getId();
+    }
+
     
 }

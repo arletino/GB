@@ -4,13 +4,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class Product {
+    private int id;
     private String manufacturerProduct;
     private String nameProduct;
     private String dateAdd;
     
-    public Product(String manufacturerProduct, String nameProduct) {
+    public Product(int id, String manufacturerProduct, String nameProduct) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm ");
         Date dateStamp = new Date();
+        this.id = id;
         this.manufacturerProduct = manufacturerProduct;
         this.nameProduct = nameProduct;
         this.dateAdd = dateFormat.format(dateStamp);
@@ -42,8 +44,16 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return "Product [manufacturerProduct=" + manufacturerProduct + ", nameProduct=" + nameProduct
+        return "Product [id= "+ id + ", manufacturerProduct=" + manufacturerProduct + ", nameProduct=" + nameProduct
                 + ", dateAdd=" + dateAdd + "]";
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
@@ -74,11 +84,6 @@ public abstract class Product {
             if (other.nameProduct != null)
                 return false;
         } else if (!nameProduct.equals(other.nameProduct))
-            return false;
-        if (dateAdd == null) {
-            if (other.dateAdd != null)
-                return false;
-        } else if (!dateAdd.equals(other.dateAdd))
             return false;
         return true;
     }
